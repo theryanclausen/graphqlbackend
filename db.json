@@ -1,0 +1,72 @@
+{
+  "matches": [
+    {
+      "id": "1",
+      "competitors": [
+        {
+          "name": [
+            "Hulk Hogan"
+          ],
+          "belt": "1",
+          "manager": null
+        },
+        {
+          "name": [
+            "Andre The Giant"
+          ],
+          "belt": null,
+          "manager": "Bobby 'The Brain' Heenan"
+        }
+      ],
+      "stipulation": null
+    },
+    {
+      "id": "2",
+      "competitors": [
+        {
+          "name": [
+            "Razor Ramon"
+          ],
+          "belt": null,
+          "manager": null
+        },
+        {
+          "name": [
+            "Shawn Michaels"
+          ],
+          "belt": "2",
+          "manager": "Diesel"
+        }
+      ],
+      "stipulation": null
+    }
+  ],
+  "belts": [
+    {
+      "name": "World Heavyweight Championship",
+      "id": "1"
+    },
+    {
+      "name": "Intercontinental Championship",
+      "id": "2"
+    },
+    {
+      "name": "24/7 Championship",
+      "id": "z1sTAwm"
+    }
+  ],
+  "stipulations": [
+    {
+      "name": "Cage Match",
+      "id": "1"
+    },
+    {
+      "name": "Ladder Match",
+      "id": "2"
+    },
+    {
+      "name": "Hardcore Match",
+      "id": "tgtqf63"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "graphqlbackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "servejson": "json-server --watch db.json --port 3333",
+    "dev": "concurrently \"yarn servejson\" \"yarn nodemon index.js\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theryanclausen/graphqlbackend.git"
+  },
+  "keywords": [],
+  "author": "Ryan Clausen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theryanclausen/graphqlbackend/issues"
+  },
+  "homepage": "https://github.com/theryanclausen/graphqlbackend#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "concurrently": "^4.1.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.3.1",
+    "json-server": "^0.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
