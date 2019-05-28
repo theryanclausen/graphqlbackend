@@ -63,6 +63,13 @@ const RootQuery = new GraphQLObjectType({
         type: NameIDType,
         ...idSearch('belts')
     },
+    belts: {
+      type: GraphQLList(NameIDType),
+      async resolve(){
+        const res = await axios.get('http://localhost:3333/belts')
+        return res.data
+      }
+    },
     matches:{
         type: GraphQLList(MatchType),
         async resolve(parentValue){
@@ -78,7 +85,7 @@ const createCompetitorInputType = new GraphQLInputObjectType({
     fields: () => ({
         belt: { type: GraphQLString },
         manager: { type: GraphQLString },
-        name: { type:new GraphQLList(GraphQLString) }
+        name: { type: GraphQLList(GraphQLString) }
       })
 })
 

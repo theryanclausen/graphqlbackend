@@ -7,6 +7,8 @@ import { onError } from "apollo-link-error";
 import { withClientState } from "apollo-link-state";
 import { ApolloLink, Observable } from "apollo-link";
 
+import Belts from './Belts'
+
 const client = new ApolloClient({
   link: ApolloLink.from([
     onError(({ graphQLErrors, networkError }) => {
@@ -26,6 +28,7 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
+    <Belts/>
       <div>Hi</div>
     </ApolloProvider>
   );
