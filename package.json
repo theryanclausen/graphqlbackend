@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "servejson": "json-server --watch db.json --port 3333",
-    "dev": "concurrently \"yarn servejson\" \"yarn nodemon index.js\" "
+    "react": "npm run start --prefix client",
+    "dev": "concurrently \"yarn servejson\" \"yarn nodemon index.js\" \"yarn react\" "
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-graphql": "^0.8.0",
     "graphql": "^14.3.1",
