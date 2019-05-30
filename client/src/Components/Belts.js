@@ -3,7 +3,7 @@ import gql from 'graphql-tag'
 import {Query, Mutation} from 'react-apollo'
 import {Formik, Field} from 'formik'
 
-const BELTS_QUERY = gql`
+export const BELTS_QUERY = gql`
     query BeltsQuery{
         belts{
             id
@@ -11,7 +11,7 @@ const BELTS_QUERY = gql`
         }
     }
     `
-const ADD_BELT = gql`
+export const ADD_BELT = gql`
     mutation addBelt($name: String!){
         addBelt(name: $name){
             name
