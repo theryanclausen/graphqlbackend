@@ -15,6 +15,7 @@ const ADD_BELT = gql`
     mutation addBelt($name: String!){
         addBelt(name: $name){
             name
+            id
         }
     }
 `
@@ -36,7 +37,16 @@ export default function Belts() {
             )
         }}
       </Query>
-      <Mutation mutation={ADD_BELT}>
+      <Mutation mutation={ADD_BELT}
+      update={(cache, {data:{addBelt}})=>{
+          const {belts} = cache.readQuery({query: BELTS_QUERY})
+            cache.writeQuery({
+                query: BELTS_QUERY,
+                data:{belts: belts.concat([addBelt])}
+            })
+      
+        }}
+      >
       {addBelt =>(
           <Formik
               initialValues={{name:''}}

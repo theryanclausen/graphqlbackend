@@ -49,28 +49,6 @@
     {
       "name": "Intercontinental Championship",
       "id": "2"
-    },
-    {
-      "name": "24/7 Championship",
-      "id": "z1sTAwm"
-    },
-    {
-      "name": "Tag Team Championships",
-      "id": "J7flBSx"
-    }
-  ],
-  "stipulations": [
-    {
-      "name": "Cage Match",
-      "id": "1"
-    },
-    {
-      "name": "Ladder Match",
-      "id": "2"
-    },
-    {
-      "name": "Hardcore Match",
-      "id": "tgtqf63"
     }
   ]
 }
